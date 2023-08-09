@@ -3,7 +3,7 @@ total_list = {
     'minuman' : ['teh botol', 'kopi']
     }
 
-
+#return (tampilan_menu)
 def tampilan_menu():
     #menampilkan item    
     daftar_item = show_item()
@@ -20,7 +20,7 @@ def show_item():
     print("\n=====Daftar List=====")
     print("list makanan: ",total_list['makanan'])
     print("list minuman: ",total_list['minuman'])
-        #return (tampilan_menu)
+        
 
 def tambah_item():
     print("\n=====tambah item=====")
@@ -28,11 +28,11 @@ def tambah_item():
     if tambah_item == "0":
         total_list['makanan'].append(input("tambah makanan: "))
         print("list makanan: ",total_list['makanan'])
-            #return
+            
     else:
         total_list['minuman'].append(input("tambah minuman: "))
         print("list minuman: ",total_list['minuman'])
-            #return
+           
 
 def delete_item():
     print("\n=====hapus item=====")
@@ -40,17 +40,17 @@ def delete_item():
     if delete_item == "0":
         total_list['makanan'].remove(input("hapus makanan: "))
         print("list makanan: ",total_list['makanan'])
-            #return
+           
     else:
         total_list['minuman'].remove(input("hapus minuman: "))
         print("list minuman: ",total_list['minuman'])
-            #return
+          
 
 def update_item():
     print("\n=====Update Stok=====")
     print("list makanan: ",total_list["makanan"])
     print("list minuman: ",total_list["minuman"])
-        #return
+        
 
 def exit():
     print("\n=====lanjut / selesai=====")
