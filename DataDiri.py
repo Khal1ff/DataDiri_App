@@ -1,10 +1,10 @@
-inputan_biodata = {
+inputan_data = {                                        # Program Data Diri 
 	'Nama' : [],
     'Umur' : [],
     'Hobi' : []
     }
 
-def menu_input():
+def menu_input():                                       # Program utama
     print("\n==========Menu==========")
     print("silahkan input data diri")
     print("1. Daftar List")
@@ -23,34 +23,34 @@ def menu_input():
         Exit()
 
 
-def DaftarInput():
+def DaftarInput():                                      # Menampilkan isi list
     print("\n===========Total List==========")
-    print(inputan_biodata['Nama'])
-    print(inputan_biodata['Umur'])
-    print(inputan_biodata['Hobi'])
+    print(inputan_data['Nama'])
+    print(inputan_data['Umur'])
+    print(inputan_data['Hobi'])
 
     # kembali ke menu
     menu_input()
 
-def Tambah():
+def Tambah():                                           # Menambahkan inputan/nilai
     print("\n=========Input Data Diri=======")
-    inputan_biodata['Nama'].append(input("Nama: "))
-    inputan_biodata['Umur'].append(input("Usia: "))
-    inputan_biodata['Hobi'].append(input("Hobi: "))
+    inputan_data['Nama'].append(input("Nama: "))
+    inputan_data['Umur'].append(input("Usia: "))
+    inputan_data['Hobi'].append(input("Hobi: "))
     
     # kembali ke menu
     menu_input()
 
-def Delete():
+def Delete():                                           # Mengurangi inputan/nilai
     print("\n========Update Data Diri=======")
-    inputan_biodata['Nama'].remove(input("Nama: "))
-    inputan_biodata['Umur'].remove(input("Usia: "))
-    inputan_biodata['Hobi'].remove(input("Hobi: "))
+    inputan_data['Nama'].remove(input("Nama: "))
+    inputan_data['Umur'].remove(input("Usia: "))
+    inputan_data['Hobi'].remove(input("Hobi: "))
     
     # kembali ke menu
     menu_input()
 
-def Exit():
+def Exit():                                             # Keluar program
     while True:
         input_lagi = input('tidak ada tambahan lagi? (y/n): ')    
         if input_lagi == "y":
