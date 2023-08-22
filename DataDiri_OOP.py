@@ -38,12 +38,14 @@ while(loop):
 
     Pilihan = input("\nmasukan pilihan [1/2/3/4]:")
     if Pilihan == "1":                                  # Menampilkan daftar list
+        print("========Daftar List========")
         for x in inputan_data:
             print("Nama : ", inputan_data[x].getNama())
             print("Umur : ", inputan_data[x].getUmur())
             print("Hobi : ", inputan_data[x].getHobi())
             
     elif Pilihan == "2":                                # Menambahkan inputan/nilai
+        print("========Tambah data========")
         Nama = input("Nama : ")
         Umur = input("Umur : ")
         Hobi = input("Hobi : ")
@@ -52,6 +54,7 @@ while(loop):
             
         
     elif Pilihan == "3":                                # Mengurangi inputan/nilai
+        print("========Delete data========")
         Nama = input("Nama yg mau di delete : ")
         if Nama in inputan_data:
             del inputan_data[Nama]
@@ -60,6 +63,7 @@ while(loop):
             
     else:                                               # keluar program
         #loop = False
+        print("===========Exit===========")
         input_lagi = input('tidak ada tambahan lagi? (y/n): ')    
         if input_lagi == "y":
             loop = True    
